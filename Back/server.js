@@ -200,6 +200,7 @@ function profileAccess(_res) {
                     console.log("keep going");
                     if (!error ) {
                         console.log(body);
+                        body = body + "hash do token de autenticacao :  " + access_token;
                         _res.send(body);     
                         _res.end();  
                     }
